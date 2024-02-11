@@ -1,0 +1,219 @@
+body {
+  background-color: #efe3e3 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180vh;
+}
+
+.todo-app {
+  background-color: #eaf2f2;
+  height: 896px;
+  width: 414px;
+}
+
+.app-banner {
+  background-image: url("/img/banner/Rectangle 259.png");
+  height: 359px;
+  width: 414px;
+  position: relative;
+}
+
+.user-photo {
+  margin-top: -50px;
+}
+.user-photo p {
+  margin-top: 17px;
+  font-size: 24px;
+  font-family: "Noto Sans SC", sans-serif;
+  color: #ffffff;
+}
+
+.todo-list {
+  margin-top: 32px;
+}
+.todo-list h4 {
+  padding-left: 23px;
+}
+.clocks {
+  padding-top: 15px;
+}
+
+.clocks h4 {
+  padding-top: 12px;
+  font-size: 24px;
+  color: #000000;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+.daily-task {
+  margin: 10px 23px 23px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  min-height: 200px;
+  height: 238px;
+  overflow-y: scroll;
+}
+
+.daily-task .task-p {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.daily-task h5 {
+  color: #797d7d;
+  font-size: 14px;
+}
+.daily-task .add-todo-list input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2ed2c9;
+}
+.daily-task input::placeholder {
+  color: #999;
+}
+
+.daily-task .add-todo {
+  width: 85%;
+}
+
+.daily-task i {
+  color: #2ed2c9;
+  background-color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.daily-task ul {
+  list-style-type: none;
+  column-gap: 0;
+}
+.daily-task ul li {
+  width: 80%;
+}
+.daily-task ul li button {
+  color: #2ed2c9 !important;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.daily-task ul li input {
+  height: 22px;
+  width: 25px;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000000; /* border color */
+  border-radius: 4px; /* rounded corners */
+  outline: none;
+  cursor: pointer;
+}
+
+/* Style for the checked state */
+.custom-checkbox:checked {
+  background-color: #2ed2c9; /* Change background color when checked */
+  border-color: #000000; /* Change border color when checked */
+}
+
+/* Hide the default checkbox indicator */
+.custom-checkbox::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #2ed2c9;
+  border-radius: 2px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Hide by default */
+}
+
+/* Show the custom checkbox indicator when checked */
+.custom-checkbox:checked::before {
+  opacity: 1;
+}
+
+/* clock */
+
+.clock {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.clock .number3 {
+  --rotation: 90deg;
+}
+
+.clock .number6 {
+  --rotation: 180deg;
+}
+
+.clock .number9 {
+  --rotation: 270deg;
+}
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: "";
+  position: absolute;
+  background-color: #f4e4e4;
+  z-index: 11;
+  width: 24px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 6.5px;
+  height: 40%;
+  background-color: #c6d1d1;
+}
+
+.clock .hand.minute {
+  width: 7.5px;
+  height: 40%;
+  background-color: #2ed2c9;
+}
+
+.clock .hand.hour {
+  width: 10px;
+  height: 30%;
+  background-color: #2ed2c9;
+}

@@ -1,0 +1,93 @@
+body {
+  background-color: #efe3e3 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180vh;
+}
+
+.sign-in-section {
+  background-color: #efe3e3;
+}
+.sign-in {
+  background-color: #eaf2f2;
+  height: 896px;
+  width: 414px;
+}
+
+.welcome-back {
+  margin-top: 26px;
+}
+.welcome-back p {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #756c6c;
+}
+.welcome-back h2 {
+  font-size: 24px;
+  color: #000000;
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: bold;
+}
+
+.mobile-login {
+  margin-top: 26px;
+}
+
+.sign-in-form {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in-form form {
+  padding: 20px;
+}
+.sign-in-form input {
+  background-color: #ffffff;
+  height: 63.9px;
+  width: 342px;
+  margin-top: 21px;
+  border: #ffffff;
+  outline: none;
+  border-radius: 25px;
+}
+
+.input-field {
+  padding-left: 20px;
+}
+
+.sign-in-form input::placeholder {
+  color: #000000;
+  font-size: 18px;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+.forgot-pass {
+  color: #2ed2c9;
+}
+.button {
+  margin-left: 53px;
+  margin-right: 53px;
+}
+.button button {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2ed2c9;
+  border: #2ed2c9;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.login-link {
+  margin-top: 16px;
+}
+.login-link p {
+  color: #756c6c;
+}
+.login-link span a {
+  text-decoration: none;
+  color: #2ed2c9;
+}

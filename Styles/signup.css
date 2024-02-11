@@ -1,0 +1,86 @@
+body {
+  background-color: #efe3e3 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180vh;
+}
+
+.sign-up-section {
+  background-color: #efe3e3;
+}
+.sign-up {
+  background-color: #eaf2f2;
+  height: 896px;
+  width: 414px;
+}
+
+.welcome-onboard {
+  margin-top: 34px;
+}
+.welcome-onboard p {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #756c6c;
+}
+.welcome-onboard h2 {
+  font-size: 24px;
+  color: #000000;
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: bold;
+}
+
+.sign-up-form {
+  margin-top: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-form form {
+  padding: 20px;
+}
+.sign-up-form input {
+  background-color: #ffffff;
+  height: 63.9px;
+  width: 342px;
+  margin-top: 21px;
+  border: #ffffff;
+  outline: none;
+  border-radius: 25px;
+}
+
+.input-field {
+  padding-left: 20px;
+}
+
+.sign-up-form input::placeholder {
+  color: #000000;
+  font-size: 18px;
+  font-family: "Noto Sans SC", sans-serif;
+}
+.button {
+  margin-top: 28px;
+  margin-left: 53px;
+  margin-right: 53px;
+}
+.button button {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2ed2c9;
+  border: #2ed2c9;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.login-link {
+  margin-top: 16px;
+}
+.login-link p {
+  color: #756c6c;
+}
+.login-link span a {
+  text-decoration: none;
+  color: #2ed2c9;
+}

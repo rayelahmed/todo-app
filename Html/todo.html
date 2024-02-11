@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Styles/todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="todo-app">
+      <section class="app-banner">
+        <div class="banner-icon">
+          <img src="/img/banner/shape (1).png" alt="" class="shape-img" />
+        </div>
+        <div class="user-photo text-center">
+          <img src="/img/banner/unsplash_W7b3eDUb_2I.png" alt="" />
+          <p>Welcome Back Jessica</p>
+        </div>
+      </section>
+      <section class="clocks text-center">
+        <h4>Good Afternoon</h4>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="clock">
+            <div class="hand hour" data-hour-hand></div>
+            <div class="hand minute" data-minute-hand></div>
+            <div class="hand second" data-second-hand></div>
+            <div class="number number3">3</div>
+            <div class="number number6">6</div>
+            <div class="number number9">9</div>
+            <div class="number number12">12</div>
+          </div>
+        </div>
+      </section>
+      <section class="todo-list">
+        <h4>Tasks list</h4>
+        <div class="daily-task">
+          <p class="task-p">Daily Task</p>
+          <ul class="">
+            <div class="todo-list-here">
+              <!-- todo-list-start-here -->
+            </div>
+            <li class="d-flex mt-2 add-todo-list align-items-center">
+              <i id="fa-solid" class="fa-solid fa-plus"></i>
+              <input
+                type="text"
+                placeholder="add your todo here "
+                class="add-todo ml-2"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="/Script/todo.js"></script>
+    <script src="/Script/clock.js"></script>
+  </body>
+</html>
